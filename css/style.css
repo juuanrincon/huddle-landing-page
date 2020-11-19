@@ -1,0 +1,217 @@
+:root {
+	--pink: hsl(322, 100%, 66%);
+	--very-pale-cyan: hsl(193, 100%, 96%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--grayish-blue: hsl(208, 11%, 55%);
+
+	--poppins: 'Poppins', sans-serif;
+	--open: 'Open Sans', sans-serif;
+
+	--shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5rem;
+	line-height: 2.6rem;
+	font-family: var(--open);
+	color: var(--very-dark-cyan);
+}
+h1 {
+	font-family: var(--poppins);
+	font-size: 2.4rem;
+	font-weight: 600;
+	line-height: 3.5rem;
+}
+h2 {
+	font-family: var(--poppins);
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.logo {
+	width: 104px;
+}
+.background-img {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.btn {
+	padding: 5px 20px;
+	font-family: var(--open);
+	font-size: 1.2rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 50px;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+}
+.btn--primary {
+	padding: 15px 60px;
+	color: #fff;
+	background: var(--pink);
+}
+.btn--secondary {
+	color: var(--very-dark-cyan);
+	background-color: #ffffff;
+}
+.white {
+	filter: brightness(0) invert();
+}
+.wrapper {
+	width: 100%;
+	min-width: 375px;
+	max-width: 1440px;
+	padding: 25px 16px;
+	margin: 0 auto;
+}
+
+/* Header */
+.hero {
+	text-align: center;
+	background-color: var(--very-pale-cyan);
+	background-image: url('../images/bg-hero-mobile.svg');
+}
+.header--nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header--title-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 25px;
+	margin-top: 50px;
+	padding: 0 15px;
+}
+.hero--background {
+	margin-top: 30px;
+	width: 100%;
+	height: 225px;
+	background-image: url('../images/illustration-mockups.svg');
+}
+
+/* Main */
+main {
+	position: relative;
+}
+.main-benefits-container {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+.benefit-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	padding: 30px 30px;
+	text-align: center;
+	box-shadow: var(--shadow);
+	border-radius: 15px;
+}
+.benefit--img {
+	width: 100%;
+	height: 230px;
+	background-image: url('../images/illustration-grow-together.svg');
+}
+.benefit--img.two {
+	background-image: url('../images/illustration-flowing-conversation.svg');
+}
+.benefit--img.three {
+	background-image: url('../images/illustration-your-users.svg');
+}
+.benefit-card h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.benefit-card p {
+	color: var(--grayish-blue);
+}
+.cta {
+	position: absolute;
+	top: calc(100% - 109px + 25px);
+	left: calc(50% - 176px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 352px;
+	height: 176px;
+	background-color: #fff;
+	box-shadow: var(--shadow);
+	border-radius: 15px;
+}
+
+/* Footer */
+footer {
+	font-size: 1.8rem;
+	color: #ffffff;
+	background-color: var(--very-dark-cyan);
+}
+footer .white {
+	width: 180px;
+	margin-top: 120px;
+}
+.footer-info {
+	margin: 50px 0;
+}
+.footer-info--contact {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.footer-info--contact span {
+	width: 20px;
+	height: 40px;
+}
+.footer-info--contact span:first-child {
+	align-self: start;
+}
+.footer-info--contact > p {
+	padding: 0 20px;
+}
+.footer-info--contact .location {
+	background-image: url('../images/icon-location.svg');
+	background-size: initial;
+}
+.footer-info--contact .phone {
+	background-image: url('../images/icon-phone.svg');
+	background-size: initial;
+}
+.footer-info--contact .email {
+	background-image: url('../images/icon-email.svg');
+	background-size: initial;
+}
+.footer-info--about {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	margin-bottom: 50px;
+}
+.footer-info--social-media ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-info--social-media ul li {
+	margin: 0 20px;
+	list-style: none;
+}
+.footer-info--social-media ul li a {
+	font-size: 3rem;
+	color: #fff;
+}
+.copyright {
+	text-align: center;
+	font-size: 1.2rem;
+}
